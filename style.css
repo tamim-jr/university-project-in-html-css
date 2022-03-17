@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Heebo', sans-serif;
 }
 .header{
     min-height: 100vh;
@@ -46,6 +47,17 @@ nav img{
     text-decoration: none;
     font-size: 1.2rem;
     color: #22b14c;
-    font-family: 'Heebo', sans-serif;
     font-weight: bold;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
 }
