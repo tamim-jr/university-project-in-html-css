@@ -44,6 +44,8 @@ nav img{
 }
 .nav-links ul li a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #22b14c;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
 }
