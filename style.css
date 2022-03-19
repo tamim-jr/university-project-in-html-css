@@ -3,7 +3,8 @@
     padding: 0;
     font-family: 'Heebo', sans-serif;
 }
-.header{
+
+.header {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(12, 13, 18, 0.88), rgb(3 46 10 / 61%)), url(img/header-bg.jpg);
@@ -11,45 +12,51 @@
     background-size: cover;
     position: relative;
 }
+
 /* .header{
-    background: url(img/header-bg.jpg);  
-  }
-  .head{
-      min-height: 100vh;
-      width: 100%;
-      background: rgba(10, 26, 116, 0.61) ;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-  }
+background: url(img/header-bg.jpg);  
+}
+.head{
+min-height: 100vh;
+width: 100%;
+background: rgba(10, 26, 116, 0.61) ;
+background-position: center;
+background-size: cover;
+position: relative;
+}
 */
 
-nav{
+nav {
     display: flex;
     padding: 2% 4%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
+
+nav img {
     width: 180px;
 }
-.nav-links{
+
+.nav-links {
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
+
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
+
+.nav-links ul li a {
     text-decoration: none;
-    font-size: 1.2rem;
-    color: #22b14c;
+    font-size: 1rem;
+    color: #ffffff;
     font-weight: bold;
 }
-.nav-links ul li::after{
+
+.nav-links ul li::after {
     content: "";
     width: 0px;
     height: 2px;
@@ -58,6 +65,57 @@ nav img{
     margin: auto;
     transition: .5s;
 }
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after {
     width: 100%;
+}
+.text-box{
+    position: absolute;
+    width: 90%;
+    color: white;
+    top: 40%;
+    left: 5%;
+    transform: (-50%, -50%);
+    text-align: center;
+}
+.text-box h2{
+    font-size: 3rem;
+}
+.text-box p{
+    margin: 10px 0 14px;
+    font-size: 16px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size:   13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 2px solid rgb(34,177,76);
+    background-color:rgb(34,177,76);
+    transition: 1s;
+}
+@media(max-width:800px){
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(34,177,76);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
 }
