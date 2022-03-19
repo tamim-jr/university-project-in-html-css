@@ -18,8 +18,8 @@
         <div class="head"></div>
         <nav>
             <a href="index.html"><img src="img/Logo-PNG.png"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">Home</a> </li>
                     <li><a href="#">Blog</a> </li>
@@ -29,6 +29,7 @@
                     <li><a href="#">Congtact</a> </li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h2>The world's most popular university.</h2>
@@ -37,5 +38,15 @@
         </div>
     </section>
 </body>
+<!-------JavaScript for Toggle menu------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+</script>
 
 </html>
