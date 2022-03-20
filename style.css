@@ -166,7 +166,7 @@ nav .fa{
 }
 .course-col{
     flex-basis: 31%;
-    background-color: rgb(34,177,76);
+    background-color: rgb(34,177,76);;
     border-radius: 10px;
     margin: bottom 5%;
     padding: 20px 12px;
@@ -184,11 +184,62 @@ nav .fa{
     color: rgb(90, 87, 87);
 }
 .course-col:hover{
-    box-shadow: 0 0 25px 0 rgba(7, 134, 92, 0.705);
+    box-shadow: 0 0 25px 0 rgb(34,177,76);;
 }
 @media(max-width:800px){
 
     .course-para{
         flex-direction: column;
     }
+    .campus-para{
+        flex-direction: column;
+    }
+}
+.campus-para{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    border-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.campus-col img{
+    width: 100%;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.layer h3{
+    color: black;
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.layer:hover{
+    background-color: rgba(7, 134, 92, 0.705);
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }
