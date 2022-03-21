@@ -194,7 +194,15 @@ nav .fa{
     .campus-para{
         flex-direction: column;
     }
+    .fac-para{
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
 }
+
+/* -----------campus------------ */
+
 .campus-para{
     width: 100%;
     margin-top: 5%;
@@ -210,6 +218,7 @@ nav .fa{
     position: relative;
     overflow: hidden;
     margin: 10px;
+    cursor: pointer;
 }
 .campus-col img{
     width: 100%;
@@ -242,4 +251,52 @@ nav .fa{
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+}
+
+/* ---------Facilities--------- */
+
+.facilities{
+    width: 80%;
+    /* margin: auto; */
+    /* text-align: center; */
+    padding-top: 100px;
+}
+.fac-header{
+    color: rgb(34,177,76);;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 2%;
+}
+.fac-header p{
+    color: rgb(90, 87, 87);
+}
+.fac-col{
+    flex-basis: 31%;
+    margin: 10px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.fac-para{
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+}
+.fac-col img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fac-col h3{
+    text-align: center;
+    margin: 10px;
+}
+.fac-col p{
+    padding: 0; 
+    font-size: 14px;
 }
